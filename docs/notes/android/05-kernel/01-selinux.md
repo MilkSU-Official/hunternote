@@ -321,7 +321,7 @@ seinfo -t sepolicy.bin | xargs -I {} sesearch -A -s {} -p permissive sepolicy.bi
 
 ## 8. ~~CVE-2025-0078~~
 
-此条目经核实在公开安全公告中无法找到对应记录，原分析内容可能不准确，已移除。如有读者找到可靠来源，欢迎补充。
+幻觉.
 
 ## 9. Android Rooting 框架的 SELinux 绕过
 
