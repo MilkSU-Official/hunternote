@@ -315,7 +315,7 @@ function getSidebar() {
 
 export default defineConfig({
   title: 'MilkSU Hunternote',
-  description: "StarNekOvO's Security Research Notes",
+  description: "MilkSU's Security Research Notes",
   lang: 'zh-CN',
   base: '/', // 使用自定义域名时设置为根路径
 
@@ -336,9 +336,9 @@ export default defineConfig({
     ['meta', { name: 'apple-mobile-web-app-title', content: '笨蛋笔记' }],
 
     // SEO meta tags
-    ['meta', { name: 'keywords', content: 'milksu, starneko, 牛奶猫, 御坂晚, StarNekOvO, security, CTF, pwn, writeup, Android security, kernel exploitation, 系统安全, 安全研究' }],
-    ['meta', { name: 'author', content: 'milksu, starneko, 牛奶猫, 御坂晚' }],
-    ['meta', { name: 'description', content: 'MilkSU Hunternote - milksu / starneko 的系统安全研究笔记与 Writeup。包含 CTF、PWN、Android 安全、内核利用等内容。' }],
+    ['meta', { name: 'keywords', content: 'milksu, starneko, 牛奶猫, security, CTF, RE, writeup, Android security, kernel exploitation, 系统安全, 安全研究' }],
+    ['meta', { name: 'author', content: 'milksu, starneko, 牛奶猫' }],
+    ['meta', { name: 'description', content: 'MilkSU Hunternote - milksu / starneko 的系统安全研究笔记与 Writeup。包含 CTF、RE、Android 安全、内核利用等内容。' }],
 
     // Other meta tags
     ['link', { rel: 'stylesheet', href: '/custom.css' }],
@@ -355,8 +355,8 @@ export default defineConfig({
 
     // Twitter Card meta tags
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:site', content: '@StarNekOvO' }],
-    ['meta', { name: 'twitter:creator', content: '@StarNekOvO' }],
+    ['meta', { name: 'twitter:site', content: '@MilkSU_Official' }],
+    ['meta', { name: 'twitter:creator', content: '@MilkSU_Official' }],
     ['meta', { name: 'twitter:title', content: 'MilkSU Hunternote - milksu / starneko' }],
     ['meta', { name: 'twitter:description', content: 'milksu / starneko (牛奶猫 / 御坂晚) 的系统安全研究笔记 - System Security Hunter' }],
     ['meta', { name: 'twitter:image', content: 'https://milksu.org/img/m2.PNG' }],
@@ -366,12 +366,12 @@ export default defineConfig({
       '@context': 'https://schema.org',
       '@type': 'Person',
       name: 'milksu',
-      alternateName: ['starneko', '牛奶猫', '御坂晚', 'StarNekOvO'],
+      alternateName: ['starneko', '牛奶猫', 'MilkSU'],
       url: 'https://milksu.org',
       image: 'https://milksu.org/img/m2.PNG',
       sameAs: [
-        'https://github.com/StarNekOvO',
-        'https://x.com/StarNekOvO',
+        'https://github.com/MilkSU-Official',
+        'https://x.com/MilkSU_Official',
         'https://t.me/StarNekOvO'
       ],
       jobTitle: 'Security Researcher',
@@ -382,13 +382,13 @@ export default defineConfig({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'MilkSU Hunternote',
-      alternateName: ['StarNekOvO Blog', 'milksu notes', 'starneko notes'],
+      alternateName: ['milksu notes', 'starneko notes', 'MilkSU Blog'],
       url: 'https://milksu.org',
-      description: 'milksu / starneko (牛奶猫 / 御坂晚) 的系统安全研究笔记与 Writeup',
+      description: 'milksu / starneko 牛奶猫的系统安全研究笔记与 Writeup',
       author: {
         '@type': 'Person',
         name: 'milksu',
-        alternateName: ['starneko', '牛奶猫', '御坂晚', 'StarNekOvO']
+        alternateName: ['starneko', '牛奶猫', '御坂晚', 'MilkSU'],
       },
       inLanguage: 'zh-CN'
     })],

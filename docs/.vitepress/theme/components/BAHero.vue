@@ -83,7 +83,7 @@ const props = withDefaults(defineProps<{
   primaryAction?: { text: string; link: string }
   secondaryAction?: { text: string; link: string }
 }>(), {
-  welcomeText: 'MilkSU Hunternote',
+  welcomeText: 'Hunternote',
   name: 'milksu',
   alias: 'starneko',
   motto: 'System Security Hunter. Python/Go/Rust.\nMSCS at CU Boulder. Freelancer.\nヨルシカ ◂Ⓘ▸ maimaiDX',
@@ -120,8 +120,8 @@ const TelegramIcon = () => h('svg', { viewBox: '0 0 24 24', fill: 'currentColor'
 ])
 
 const socialLinks = [
-  { icon: GithubIcon, url: 'https://github.com/StarNekOvO', name: 'GitHub' },
-  { icon: TwitterIcon, url: 'https://x.com/StarNekOvO', name: 'X' },
+  { icon: GithubIcon, url: 'https://github.com/MilkSU-Official', name: 'GitHub' },
+  { icon: TwitterIcon, url: 'https://x.com/MilkSU_Official', name: 'X' },
   { icon: TelegramIcon, url: 'https://t.me/StarNekOvO', name: 'Telegram' },
 ]
 
