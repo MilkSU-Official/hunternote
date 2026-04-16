@@ -84,7 +84,7 @@ const props = withDefaults(defineProps<{
   secondaryAction?: { text: string; link: string }
 }>(), {
   welcomeText: 'Hunternote',
-  name: 'milksu',
+  name: 'MilkSU',
   alias: 'starneko',
   motto: 'System Security Hunter. Python/Go/Rust.\nMSCS at CU Boulder. Freelancer.\nヨルシカ ◂Ⓘ▸ maimaiDX',
   avatar: '/img/m2.PNG',

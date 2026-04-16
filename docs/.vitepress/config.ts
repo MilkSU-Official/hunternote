@@ -351,14 +351,14 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://milksu.org' }],
     ['meta', { property: 'og:image', content: 'https://milksu.org/img/m2.PNG' }],
     ['meta', { property: 'og:site_name', content: 'MilkSU Hunternote' }],
-    ['meta', { property: 'og:description', content: 'milksu / starneko (牛奶猫 / 御坂晚) 的系统安全研究笔记 - System Security Hunter. Python/Go/Rust. MSCS at CU Boulder.' }],
+    ['meta', { property: 'og:description', content: 'MilkSU 的系统安全研究笔记 - System Security Hunter. Python/Go/Rust. MSCS at CU Boulder.' }],
 
     // Twitter Card meta tags
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@MilkSU_Official' }],
     ['meta', { name: 'twitter:creator', content: '@MilkSU_Official' }],
     ['meta', { name: 'twitter:title', content: 'MilkSU Hunternote - milksu / starneko' }],
-    ['meta', { name: 'twitter:description', content: 'milksu / starneko (牛奶猫 / 御坂晚) 的系统安全研究笔记 - System Security Hunter' }],
+    ['meta', { name: 'twitter:description', content: 'MilkSU 的系统安全研究笔记 - System Security Hunter' }],
     ['meta', { name: 'twitter:image', content: 'https://milksu.org/img/m2.PNG' }],
 
     // JSON-LD structured data for better SEO
@@ -384,10 +384,10 @@ export default defineConfig({
       name: 'MilkSU Hunternote',
       alternateName: ['milksu notes', 'starneko notes', 'MilkSU Blog'],
       url: 'https://milksu.org',
-      description: 'milksu / starneko 牛奶猫的系统安全研究笔记与 Writeup',
+      description: 'MilkSU 的系统安全研究笔记与 Writeup',
       author: {
         '@type': 'Person',
-        name: 'milksu',
+        name: 'MilkSU',
         alternateName: ['starneko', '牛奶猫', '御坂晚', 'MilkSU'],
       },
       inLanguage: 'zh-CN'
