@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "牛奶喵的笨蛋笔记"
+  name: "MilkSU Hunternote"
   text: "milksu"
   tagline: "System Security Hunter. Python/Go/Rust.<br>MSCS at CU Boulder. Freelancer.<br>ヨルシカ ◂ⓘ▸ maimaiDX"
   image:
