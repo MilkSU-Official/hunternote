@@ -174,6 +174,17 @@ const friends = [
     link: 'https://www.one-among.us/profile/SevenBird',
     avatar: '/img/sevenbird.jpg',
     desc: 'R.I.P.'
+  },
+  {
+    name: 'SorrowRain的小窝',
+    link: 'https://0xsr.dev/',
+    avatar: 'https://0xsr.dev/avatar-fixed.jpeg',
+    desc: '关于生活、思考、随笔以及碎碎念',
+    socialLinks: [
+      { type: 'github', url: 'https://github.com/sorrowrain', name: 'GitHub' },
+      { type: 'twitter', url: 'https://x.com/0xSorrowRain', name: 'Twitter' },
+      { type: 'telegram', url: 'https://t.me/SorrowRain', name: 'Telegram' }
+    ]
   }
 ]
 </script>
