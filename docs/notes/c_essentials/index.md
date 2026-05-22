@@ -26,8 +26,8 @@ C 语言速查与其在 Android 内核、驱动、Native 层开发中的应用
 
 | CVE | 组件 | 类型 |
 |-----|------|------|
-| [CVE-2023-20938](../../cves/entries/CVE-2023-20938.md) | Binder driver | UAF (野外利用) |
-| [CVE-2023-21255](../../cves/entries/CVE-2023-21255.md) | Binder driver | UAF |
+| CVE-2023-20938 | Binder driver | UAF (野外利用) |
+| CVE-2023-21255 | Binder driver | UAF |
 | [CVE-2024-36971](../../cves/entries/CVE-2024-36971.md) | Kernel 网络路由 | UAF (RCE) |
 | [CVE-2024-40660](../../cves/entries/CVE-2024-40660.md) | SurfaceFlinger | 逻辑错误 |
 | [CVE-2024-53104](../../cves/entries/CVE-2024-53104.md) | USB 驱动 | OOB Write |

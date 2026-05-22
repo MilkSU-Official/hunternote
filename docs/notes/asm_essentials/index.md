@@ -207,9 +207,9 @@ aarch64-linux-gnu-gdb hello
 
 | CVE | 类型 | 章节 |
 |-----|------|------|
-| [CVE-2021-0920](../../cves/entries/CVE-2021-0920.md) | socket UAF | 06 |
-| [CVE-2022-20186](../../cves/entries/CVE-2022-20186.md) | GPU 驱动 | 06 |
-| [CVE-2023-20938](../../cves/entries/CVE-2023-20938.md) | Binder UAF | 05, 06 |
+| CVE-2021-0920 | socket UAF | 06 |
+| CVE-2022-20186 | GPU 驱动 | 06 |
+| CVE-2023-20938 | Binder UAF | 05, 06 |
 
 ## 深入阅读
 

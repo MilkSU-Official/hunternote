@@ -145,7 +145,7 @@
 
 | 年份 | 漏洞名称 | CVE | 描述 | 对架构演进的影响 |
 | :--- | :--- | :--- | :--- | :--- |
-| 2021 | **Kernel Exploit** | `[CVE-2021-1048](../../../cves/entries/CVE-2021-1048.md)` | Android kernel 漏洞，Google TAG 报告在野利用（内核提权链）。 | 持续验证 GKI 统一内核的必要性，推动内核安全补丁的快速分发与统一更新机制。 |
+| 2021 | **Kernel Exploit** | `CVE-2021-1048` | Android kernel 漏洞，Google TAG 报告在野利用（内核提权链）。 | 持续验证 GKI 统一内核的必要性，推动内核安全补丁的快速分发与统一更新机制。 |
 
 ### Android 13 (2022)：细化权限与体验
 - **照片选择器 (Photo Picker)**：允许用户只授予应用访问特定照片或视频的权限，而无需暴露整个媒体库。
@@ -157,7 +157,7 @@
 
 | 年份 | 漏洞名称 | CVE | 描述 | 对架构演进的影响 |
 | :--- | :--- | :--- | :--- | :--- |
-| 2022 | **Dirty Pipe** | `[CVE-2022-0847](../../../cves/entries/CVE-2022-0847.md)` | Linux kernel 漏洞，影响 Android 12 等设备（以当期补丁为准）。 | 再次凸显内核层漏洞的长尾影响，推动 GKI 统一内核更新机制的持续优化与完善。 |
+| 2022 | **Dirty Pipe** | `CVE-2022-0847` | Linux kernel 漏洞，影响 Android 12 等设备（以当期补丁为准）。 | 再次凸显内核层漏洞的长尾影响，推动 GKI 统一内核更新机制的持续优化与完善。 |
 
 ### Android 14 (2023)：强化安全基线与 AVF
 - **限制安装旧版应用**：为防止恶意软件利用旧版API漏洞，系统默认阻止安装面向过时 Android 版本（Android 5.1 及更早）的应用。
@@ -171,7 +171,7 @@
 
 | 年份 | 漏洞名称 | CVE | 描述 | 对架构演进的影响 |
 | :--- | :--- | :--- | :--- | :--- |
-| 2023 | **libwebp 0day** | `[CVE-2023-4863](../../../cves/entries/CVE-2023-4863.md)` | libwebp 多平台在野利用；Android WebView/媒体链路常见关注点。 | 验证 Mainline 模块化更新机制的价值，推动更多关键组件（如 WebView）通过 Google Play 系统更新快速修复。 |
+| 2023 | **libwebp 0day** | `CVE-2023-4863` | libwebp 多平台在野利用；Android WebView/媒体链路常见关注点。 | 验证 Mainline 模块化更新机制的价值，推动更多关键组件（如 WebView）通过 Google Play 系统更新快速修复。 |
 
 ### Android 15 (2024)：隐私隔离与平台适配
 
@@ -183,7 +183,7 @@
 
 | 年份 | 漏洞名称 | CVE | 描述 | 对架构演进的影响 |
 | :--- | :--- | :--- | :--- | :--- |
-| 2024 | **WebView 0day** | `[CVE-2024-29745](../../../cves/entries/CVE-2024-29745.md)` | Android System WebView 在野利用，被列入 CISA KEV。 | 强调组件更新路径的重要性，验证 WebView 通过 Google Play 独立更新机制在应对 0day 时的响应速度优势。 |
+| 2024 | **Pixel fastboot 信息泄露** | `[CVE-2024-29745](../../../cves/entries/CVE-2024-29745.md)` | Pixel fastboot/firmware 未初始化数据导致信息泄露，被列入 CISA KEV。 | 强调厂商固件与 bootloader 更新路径的重要性；这类问题不能只依赖 Framework/Mainline 更新。 |
 
 ### Android 16 (2025)：平台侧安全/隐私强化
 

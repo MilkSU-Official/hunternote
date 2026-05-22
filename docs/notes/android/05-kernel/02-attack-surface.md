@@ -175,7 +175,7 @@ buffer = kmalloc(total_size, GFP_KERNEL);  // 分配过小
 
 **修复**：内核补丁 + 应用沙箱加固
 
-**[CVE-2022-0847](../../../cves/entries/CVE-2022-0847.md) (Dirty Pipe)**：
+**CVE-2022-0847 (Dirty Pipe)**：
 - Dirty Pipe (CVE-2022-0847) 与 Dirty COW (CVE-2016-5195) 虽然都允许写入只读文件，但根因完全不同：Dirty COW 是内存管理子系统的 copy-on-write 竞争条件，Dirty Pipe 是管道子系统中 `PIPE_BUF_FLAG_CAN_MERGE` 标志未正确初始化。
 - Linux 5.8-5.16内核
 - 影响新版Android设备
@@ -183,7 +183,7 @@ buffer = kmalloc(total_size, GFP_KERNEL);  // 分配过小
 ### 2.5 特定SoC漏洞
 
 **高通相关**：
-- [CVE-2021-1905](../../../cves/entries/CVE-2021-1905.md): GPU内存管理UAF  
+- CVE-2021-1905: GPU内存管理UAF  
 
 **联发科相关**：
 

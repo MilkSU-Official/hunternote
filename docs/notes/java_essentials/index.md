@@ -30,5 +30,5 @@ Java 语言速查，及其在 Android Framework 和应用开发中的应用
 | [CVE-2024-0044](../../cves/entries/CVE-2024-0044.md) | PMS | run-as any app |
 | [CVE-2024-43093](../../cves/entries/CVE-2024-43093.md) | ExtStorage | 路径绕过 (野外利用) |
 | [CVE-2025-48543](../../cves/entries/CVE-2025-48543.md) | ART | UAF 沙箱逃逸 |
-| [CVE-2025-48593](../../cves/entries/CVE-2025-48593.md) | System | Zero-click RCE |
-| [CVE-2025-48633](../../cves/entries/CVE-2025-48633.md) | Framework | Binder 身份伪造 |
+| [CVE-2025-48593](../../cves/entries/CVE-2025-48593.md) | Bluetooth | UAF 远程代码执行 |
+| [CVE-2025-48633](../../cves/entries/CVE-2025-48633.md) | DevicePolicy | provisioning 后 Device Owner 逻辑错误 (ITW) |

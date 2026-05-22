@@ -93,7 +93,7 @@ public ParcelFileDescriptor openFile(Uri uri, String mode) {
 }
 ```
 
-### 4.3 [CVE-2021-0478](../../../cves/entries/CVE-2021-0478.md) - MediaStore 注入攻击
+### 4.3 CVE-2021-0478 - MediaStore 注入攻击
 
 **漏洞原理**：
 

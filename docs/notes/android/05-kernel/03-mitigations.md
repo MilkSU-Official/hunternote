@@ -38,7 +38,7 @@ adb shell cat /proc/kallsyms | head -5
 |------|------|------------|
 | Linear Map 非随机化 | Pixel 设备的线性映射和物理内存加载地址缺乏充分随机化 | （此引用链接未经验证，可能不存在） |
 | Cache Timing Attack | 通过 prefetch 指令测量访问时间推断内核地址 | kaslr-bypass-via-prefetch |
-| EntryBleed ([CVE-2022-4543](../../../cves/entries/CVE-2022-4543.md)) | 利用 KPTI 的 syscall/interrupt 处理例外泄露地址 | USENIX Security 2023 |
+| EntryBleed (CVE-2022-4543) | 利用 KPTI 的 syscall/interrupt 处理例外泄露地址 | USENIX Security 2023 |
 | Side-channel via /proc | 某些 /proc 接口泄露内核指针 | 各种信息泄露 CVE |
 
 **实际 Bypass 示例**：

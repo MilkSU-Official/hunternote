@@ -45,7 +45,7 @@ Android 12 起，若组件声明 `intent-filter` 但未显式声明 `android:exp
 
 ## 4. 代表性CVE案例
 
-### 4.3 [CVE-2021-0478](../../../cves/entries/CVE-2021-0478.md) (PackageInstaller提权)
+### 4.3 CVE-2021-0478 (PackageInstaller提权)
 
 **位置**：PackageInstaller权限检查
 

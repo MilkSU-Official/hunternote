@@ -185,7 +185,7 @@ Binder 采用引用计数管理对象生命周期。
 
 ## 3. 真实漏洞案例深度分析
 
-### 3.3 [CVE-2021-0928](../../../cves/entries/CVE-2021-0928.md) - Parcel 序列化不匹配（Launch Anywhere）
+### 3.3 CVE-2021-0928 - Parcel 序列化不匹配（Launch Anywhere）
 
 **CVE-2021-0928 (Parcel 序列化不匹配)**：`OutputConfiguration` 类的 `writeToParcel()` 与 `createFromParcel()` 实现不一致，导致 Bundle 在序列化/反序列化时产生差异。攻击者可利用此不匹配构造恶意 Bundle，实现 launch-anywhere 攻击（在任意上下文中启动 Activity）。
 
