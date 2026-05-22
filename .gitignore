@@ -168,3 +168,4 @@ node_modules
 # Rust / Cargo
 **/target/
 **/*.rs.bk
+.DS_Store
