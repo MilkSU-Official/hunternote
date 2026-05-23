@@ -22,12 +22,12 @@
     </div>
 
     <!-- 滚动模式 -->
-    <FriendsCarousel v-if="viewMode === 'carousel'" :friends="friends" />
+    <FriendsCarousel v-if="viewMode === 'carousel'" :friends="displayedFriends" />
 
     <!-- 卡片模式 -->
     <div v-else class="friends-grid">
       <FriendCard
-        v-for="friend in friends"
+        v-for="friend in displayedFriends"
         :key="friend.link"
         :name="friend.name"
         :link="friend.link"
@@ -46,14 +46,18 @@ import FriendsCarousel from './FriendsCarousel.vue'
 
 const viewMode = ref('carousel')
 
-// 移动端默认卡片网格，桌面端默认滚动
-onMounted(() => {
-  if (window.innerWidth <= 768) {
-    viewMode.value = 'grid'
-  }
-})
-
 const friends = [
+  {
+    name: 'SorrowRain的小窝',
+    link: 'https://0xsr.dev/',
+    avatar: 'https://0xsr.dev/avatar-fixed.jpeg',
+    desc: '关于生活、思考、随笔以及碎碎念',
+    socialLinks: [
+      { type: 'github', url: 'https://github.com/sorrowrain', name: 'GitHub' },
+      { type: 'twitter', url: 'https://x.com/0xSorrowRain', name: 'Twitter' },
+      { type: 'telegram', url: 'https://t.me/SorrowRain', name: 'Telegram' }
+    ]
+  },
   {
     name: 'ZianTT',
     link: 'https://ziantt.top/',
@@ -176,6 +180,30 @@ const friends = [
     desc: 'R.I.P.'
   }
 ]
+
+const displayedFriends = ref([...friends])
+
+const shuffleFriends = <T,>(items: T[]) => {
+  const shuffled = [...items]
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1))
+    const currentItem = shuffled[index]
+    shuffled[index] = shuffled[randomIndex]
+    shuffled[randomIndex] = currentItem
+  }
+
+  return shuffled
+}
+
+// 移动端默认卡片网格，桌面端默认滚动；友链每次进入页面随机排序
+onMounted(() => {
+  if (window.innerWidth <= 768) {
+    viewMode.value = 'grid'
+  }
+
+  displayedFriends.value = shuffleFriends(friends)
+})
 </script>
 
 <style scoped>
