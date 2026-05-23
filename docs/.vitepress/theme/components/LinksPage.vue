@@ -22,12 +22,12 @@
     </div>
 
     <!-- 滚动模式 -->
-    <FriendsCarousel v-if="viewMode === 'carousel'" :friends="friends" />
+    <FriendsCarousel v-if="viewMode === 'carousel'" :friends="displayedFriends" />
 
     <!-- 卡片模式 -->
     <div v-else class="friends-grid">
       <FriendCard
-        v-for="friend in friends"
+        v-for="friend in displayedFriends"
         :key="friend.link"
         :name="friend.name"
         :link="friend.link"
@@ -45,13 +45,6 @@ import FriendCard from './FriendCard.vue'
 import FriendsCarousel from './FriendsCarousel.vue'
 
 const viewMode = ref('carousel')
-
-// 移动端默认卡片网格，桌面端默认滚动
-onMounted(() => {
-  if (window.innerWidth <= 768) {
-    viewMode.value = 'grid'
-  }
-})
 
 const friends = [
   {
@@ -187,6 +180,30 @@ const friends = [
     desc: 'R.I.P.'
   }
 ]
+
+const displayedFriends = ref([...friends])
+
+const shuffleFriends = <T,>(items: T[]) => {
+  const shuffled = [...items]
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1))
+    const currentItem = shuffled[index]
+    shuffled[index] = shuffled[randomIndex]
+    shuffled[randomIndex] = currentItem
+  }
+
+  return shuffled
+}
+
+// 移动端默认卡片网格，桌面端默认滚动；友链每次进入页面随机排序
+onMounted(() => {
+  if (window.innerWidth <= 768) {
+    viewMode.value = 'grid'
+  }
+
+  displayedFriends.value = shuffleFriends(friends)
+})
 </script>
 
 <style scoped>
