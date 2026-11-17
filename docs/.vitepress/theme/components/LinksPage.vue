@@ -141,11 +141,12 @@ const friends = [
   },
   {
     name: 'Xiaotian 7196',
-    link: 'https://koten.top',
-    avatar: 'https://koten.top/ISEKAI.png',
+    link: 'https://ソラ.jp/',
+    avatar: 'https://xn--3ckue.jp/assets/images/favicon.png',
     desc: '无论如何，请不要后悔与我相遇',
     socialLinks: [
-      { type: 'github', url: 'https://github.com/xiaotian7196', name: 'GitHub' }
+      { type: 'github', url: 'https://github.com/xiaotian7196', name: 'GitHub' },
+      { type: 'twitter', url: 'https://x.com/xiaotian7196', name: 'Twitter' }
     ]
   },
   {
